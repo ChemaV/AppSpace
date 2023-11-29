@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/63ced1c4b7.js" crossorigin="anonymous"></script>
+    <!--enlace fontawesome (iconos media)-->
+    <title>Nuestra Historia</title>
+    <link rel="stylesheet" href="/srs/css/style_historia.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="encabezado">
+            <div>
+                <nav class="menuppal">
+                    <ul>
+                        <br><br>
+                        <li><a href="#">Encuentra tu ubicación</a></li>
+                        <li><a href="#">Productos y servicios</a></li>
+                        <li><a href="/srs/html/nuestrahistoria1.html">Nuestra historia</a></li>
+                        <li><a href="/srs/html/formulario_contacto.html">Contactos</a></li>
+                        <li><a href="/srs/html/index_registro.html">Iniciar sesión</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="hamburger">
+                        <div class="_layer -top"></div>
+                        <div class="_layer -mid"></div>
+                        <div class="_layer -bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger-background">
+                <a href="/srs/index.html"><img src="/srs/img/logoappspaceblanco.png"></a>
+            </div>
+        </header>
+
+        <main class="container-nuestra-historia"> <!--clases añadidas en main, div e img-->
+            <div class="container-nuestra-historia-text">
+                <h1>Nuestra Historia</h1>
+                <h2>¿Quiénes somos?</h2> <!--cambiado de mayúscula a minúscula, introducidos strong en los parrafos-->
+                <p><br>Creemos que nuestro trabajo gira en torno a <strong>personas e ideas</strong>. Nuestros espacios
+                    están llenos de
+                    personas
+                    visionarias, innovadoras y dispuestas a cambiar las cosas. Personas que confían en lograr sus
+                    objetivos.
+                    En
+                    Spaces ayudamos a nuestra comunidad a ampliar horizontes, ya seas una pyme, un emprendedor o estés
+                    al
+                    frente
+                    de una gran empresa.</p>
+                <p><br>Nuestra mentalidad abierta atrae a una <strong>comunidad</strong> muy activa de pensadores
+                    positivos y abiertos, a
+                    los que
+                    les
+                    gusta conocer a personas nuevas. El amplio surtido de eventos profesionales y servicios de
+                    recepción,
+                    junto
+                    con el sofisticado e inspirador diseño europeo de nuestros clubs de negocios, contagia la energía y
+                    el
+                    entusiasmo de Spaces y hace que todo el mundo se sienta como en casa.</p>
+                <p><br>Al crear espacios de trabajo dinámicos con un espíritu de emprendimiento único, te ayudamos a
+                    pensar,<strong>crear y colaborar</strong> mientras nuestro equipo cuida de los servicios y factores
+                    logísticos en segundo plano. En Spaces
+                    nos aseguramos de que nuestra comunidad pueda centrarse en impulsar su negocio.</p>
+            </div>
+            <div class="container-nuestra-historia-div"><img
+                    src="https://wearecloudworks.com/wp-content/uploads/2022/01/beneficios-coworking.jpeg"
+                    alt="coworking" class="container-nuestra-historia-div-image">
+            </div>
+        </main>
+
+        <footer class="footer-contenedor">
+            <div class="footer-contenedor__info">
+                <h4 class="header-footer">Ubicaciones</h4>
+                <ul>
+                    <li class="header-footer-info"><a href="#" class="">Madrid, Atocha Estacion</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Madrid, Centro</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Madrid, Alcorcon</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Madrid, Fuenlabrada</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Barcelona, Centro</a></li>
+                </ul>
+            </div>
+            <div class="footer-contenedor__info3">
+                <h4 class="header-footer">Appspace</h4>
+                <ul>
+                    <li class="header-footer-info"><a href="#" class="">Contactos</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Nuestra Historia</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Registro</a></li>
+                </ul>
+            </div>
+
+            <div class="logo-footer">
+                <img src="/srs/picture/logo_appspace_blanco.webp">
+            </div>
+            <div class="footer-contenedor__info2">
+                <h4 class="header-footer">Productos y Servicios</h4>
+                <ul>
+                    <li class="header-footer-info"><a href="#" class="">Espacio de oficinas</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Coworking por suscripción</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Escritorio exclusivo</a></li>
+                    <li class="header-footer-info"><a href="#" class="">Salas de reuniones</a></li>
+                </ul>
+            </div>
+            <div class="footer-social-media">
+                <h4>Media</h4>
+                <ul class="socialmedia">
+                    <li class="socialmedia-facebook"><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li class="socialmedia-instagram"><a href="#" target="_blank"><i
+                                class="fa-brands fa-square-instagram"></i></a></li>
+                    <li class="socialmedia-x"><a href="#" target="_blank"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                    </li>
+                    <li class="socialmedia-youtube"><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        
+    </div>
+    <script>
+        // selector
+        var menu = document.querySelector('.hamburger');
+
+        // method
+        function toggleMenu(event) {
+            this.classList.toggle('is-active');
+            document.querySelector(".menuppal").classList.toggle("is_active");
+            event.preventDefault();
+        }
+
+        // event
+        menu.addEventListener('click', toggleMenu, false);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Oswald:wght@500&display=swap');
+
+body {
+    height: 100vh;
+    background-image: url("/srs/img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo-apariencia {
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    height: 6%;
+}
+
+.logo-appspace {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+}
+
+.logo {
+    width: 110px;
+    overflow: hidden;
+    align-self: stretch;
+    max-width: 100%;
+    position: fixed;
+    margin-top: 20px;
+  }
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: #363062;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.barra {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width: 100vw;
+    gap: 7vw;
+    padding-inline-end: 5vw;
+}
+
+.barra li, .barra a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.barra-telefono {
+    background: #F0F0F0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    padding-inline-end: 5vw;
+}
+
+.enlaces1, .enlaces2 {
+    width: 18vw;
+    padding: 0.5vw;
+    border: orange solid 2px;
+    border-radius: 0.4vw;
+    text-decoration: none;
+    color: orange;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.enlaces1:hover {
+    background: orange;
+    color: white;
+}
+
+.enlaces2 {
+    color: white;
+    background: orange;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.enlaces2:hover {
+    opacity: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #ffa500;
+    padding: 0px;
+    margin-top: -55px;
+    overflow: hidden;
+    margin-left: -100px;
+    margin-right: -10px;
+    
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar a:hover {
+    background-color: #363062;
+
+}
+
+.navbar li {
+    float: right;
+
+}
+
+.form-register {
+    width: 400px;
+    height: 480px;
+    background: rgba(242 242 242);
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 120px;    
+    border-radius: 10px;    
+    font-family: 'Oswald', sans-serif;
+    color: #363062;
+    box-shadow: 5px 10px 27px #919191;
+    text-align: center;
+    padding-right: 50px;
+    }
+
+.form-register h4 {
+font-size: 22px;
+margin-bottom: 20px;
+}
+
+.controls, textarea {
+    width: 100%;
+    background:#F0F0F0;
+    padding: 10px;
+    border-radius: 0.4vw;
+    margin-bottom: 10px;
+    border: 1.8px solid #F99417;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    }
+
+    .form-register checkbox-label {
+        align-self: flex-start;
+        display: inline-flex;
+        width: 301px;
+        max-width: 100%;
+        gap: 0px;
+        margin: 30px 0 0 24px;
+        font: 400 13px/136% oswald, sans-serif;
+    }
+
+    .form-register a {
+        color: #F99417;
+        text-decoration: none;  
+    }
+
+    .cuenta {
+        color: #F99417;
+        text-decoration: none;
+        margin-top: 0px;
+    }
+
+    .form-register a:hover {
+        color: #363062;
+        text-decoration: underline;
+        
+    }
+    
+    #miBoton {
+        font-size: 16px;
+        color: white;
+        border: 0;
+        padding: 13px;
+        border-radius: 5px;
+        opacity: 0.6;
+        transition: 0.3s;
+        background-color: #F99417; 
+        box-shadow: 0 0 20px #fbdea6;
+        cursor: pointer;      
+        margin: 14px;
+        }
+    
+  .form-register #miBoton {
+    width: 110px;
+    background: #F99417;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    margin: 16px 0;
+    font-size: 16px;
+    }
+
+    .form-register #error-message {
+        color: red;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .form-register #error-message2 {
+        color: red;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .form-register #error-message3 {
+        color: red;
+        font-size: 14px;
+        text-align: left;
+    }
+
+   
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        font-size: x-small;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .barra-telefono,
+    .enlaces1,
+    .enlaces2 {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-register {
+        font-size: small;
+        width: 245px;
+        height: 460px;
+        
+
+    }
+    
+}
